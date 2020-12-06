@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+*{margin:0;padding:0;}
+.banner{
+	background-color:#19cbab;
+	color:#fff;
+	height:120px;
+	font-size:45px;
+	display:flex;
+    align-items:center;
+}
+.title{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+.main{
+	background-color:#2ead5e;
+	color:#fff;
+	font-size:100px;
+	text-align:center;
+	height:520px;
+	display:flex;
+    align-items:center;
+}
+.mainbody{
+	margin: 0 auto;
+    animation: bounce-in 1s ease-in infinite;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(1);//开始放大倍数
+  }
+  50% {
+     transform: scale(1.5, 1.5);//50%时放大倍数：x轴和y轴
+  }
+  100% {
+    transform: scale(1);//最终放大倍数
+  }
+}
+.content{
+	font-size:33px;
+}
+.subtitle{
+	font-size:35px;
+	margin:35px;
+}
+.detail{	
+	margin:35px;
+}
+.left{
+	text-align:left;
+	width:200px;
+	display:inline-block;
+}
+.area{
+	color:#31ac5f;
+}
+.date{
+	color:#f54427;
+	font-weight:600;
+	font-size:40px;
+}
+.remark{
+	margin:35px;
+	color:#ec6946;
+}
+</style>
+</head>
+<div class="banner"><span style="position:absolute;left:30px;">&lt;</span><div class="title">办公室区域准入</div></div>
+<transition name="bounce" class="main"><div class="mainbody">12月07日</div></transition>
+<div class="content">
+<div class="subtitle">员工信息</div>
+<div class="detail"><div class="left">系统：</div><span>COO系统合作伙伴</span></div>
+<div class="detail"><div class="left">工号：</div><span>W9006179</span></div>
+<div class="detail"><div class="left">姓名：</div><span>谢健</span></div>
+<div class="detail"><div class="left">部门：</div><span>IT产品部合作伙伴</span></div>
+<div class="detail"><div class="left">办公地点：</div><span class="area">长安F4综合楼5楼</span></div>
+<div class="detail"><div class="left">有效日期：</div><span class="date">2020年12月07日</span></div>
+<div class="remark">1、请坚持每日健康打卡，未打卡将取消办公准入权限。</div>
+</div>
+</html>
